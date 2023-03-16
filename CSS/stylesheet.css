@@ -3,14 +3,16 @@ body {
 }
 
 header {
-    background-image: url(../images/aibackground.jpg);
+    background-image: url(../images/background.jpg);
     background-size: cover;
+    padding: 1rem;
+    text-align: center;
 }
 
 nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+    gap: 80px;
     border: aqua;
 }
 
@@ -25,23 +27,49 @@ h1 {
 
 .b:hover {
     font-size: larger;
+    border: solid;
+    border-color: #218AFF;
 }
 
 .c:hover {
     font-size: larger;
+    border: solid;
+    border-color: #218AFF;
 }
 
 .d:hover {
     font-size: larger;
+    border: solid;
+    border-color: #218AFF;
 }
 .e:hover {
     font-size: larger;
+    border: solid;
+    border-color: #218AFF;
 }
 
 img {
     border-radius: 50%;
     border: solid;
-    border-color: teal;
+    background-color: #346E75;
+    border-color: #E9E9E9;
+}
+
+.profile {
+    color: #E9E9E9;
+    border: solid;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.names {
+    position: relative;
+    text-align: center;
+    border: solid;  
+}
+
+#title {
+    color: #E9E9E9;
 }
 
  a {
@@ -50,7 +78,7 @@ img {
  }
 
  a:hover {
-    color: rebeccapurple;
+    color: #FFDA5F;
  }
 
  .article {
@@ -63,14 +91,16 @@ img {
     flex: 1;
     border: solid;
     padding: 5px;
-    border-color: #e51013;
+    border-color: #E9E9E9;
+    margin-right: 20px;
  }
 
  .skills {
     flex: 1;
     border: solid;
     padding: 5px;
-    border-color: #032539;
+    border-color: #E9E9E9;
+    margin-left: 20px;
  }
 
  footer {
@@ -81,9 +111,47 @@ img {
  }
 
  .socials {
+    list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    font-size: xx-large;
+ }
+
+ #id {
+    color: #E9E9E9;
+ }
+ #box {
+    position: relative;
+    text-align: center;
  }
 
  /* ---------------MOBILE----------------- */
 
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        border: aqua;
+    }
+
+    .article {
+        background-color: #346E75;
+        display: flex;
+        justify-content: s;
+     }
+
+    #box {
+        position: relative;
+        text-align: start;
+        display: contents;
+    }
+
+
+    
+}

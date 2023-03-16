@@ -6,24 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/stylesheet.css">
     <script src="https://kit.fontawesome.com/b128a9daec.js" crossorigin="anonymous"></script>
-    <title>Rabeng Kagiso</title>
+    <title>resume-9</title>
 </head>
 <body>
     <div class="main-container">
         <div class="header">
             <header>
                 <picture>
-                    <source media="(min-width: )" srcset="images/face.jpg">
-                    <source media="(min-width: )" srcset="images/medium.jpg">
+                    <source media="(max-width:600px )" srcset="images/face.png">
+                    <source media="(max-width: 900px)" srcset="images/medium.png">
                     <img src="images/full.png" alt="full.png" height="200px" width="200px">
                 </picture>
-                <h1>RABENG KAGISO</h1>
-                <p>Web Developer</p>
+
+                <div class="name">
+                    <h1>RABENG KAGISO</h1>
+                    <h3 id="title">Web Developer</h3>
+                </div>
+                
                 
                 <div class="profile">
                     <h3>Profile</h3>
-                    <p>I am a young and ambitious software developer. I can handle pressure very well and I adapt well  to new environments. I am a goal-driven individual, coachable and willing to learn.</p>
+                    <p>I am a young and ambitious software developer based in Rustenburg, South Africa.</p>
+                    <p>I can handle pressure very well and I adapt well  to new environments.</p>
+                    <p>I am a goal-driven individual, coachable and willing to learn.</p>
                 </div>
+
+                <!--- divs are given a tags to link them with headers at the bottom--->
                 
                 <nav>
                     <div class="a"><a href="#contacts">Contacts</a></div>
@@ -69,10 +77,12 @@
             
         </article>
 
+        <!-----footer is where my contact sections are. This differs from the nav bar-->
+
         <footer>
             <h2>Contacts</h2>
-            <div class="socials">
-                <ul>
+            <div>
+                <ul class="socials">
                     <li><a href=" https://www.facebook.com/kagiso.rabeng.526?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                     <li><a href=" https://twitter.com/Rabeng_Kagiso?t=WapUYJl0hhgsuDmaVTsDcA&s=09" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
                     <li><a href="https://github.com/KagisoRabeng" target="_blank"><i class="fa-brands fa-github"></i></a></li>
@@ -83,29 +93,51 @@
 
             <div>
                 <form id="enquire" action="https://formsubmit.co/kagisorabeng3@gmail.com" method="POST">
+                    
+                    <div id="labels">
 
-                    <label for="Full Names">Full Names:</label>
-                    <input type="text" id="Full Names" placeholder="e.g Phakiso Ngcobo" required>
+                        <div>
+                            <label for="Full Names">Full Names:</label>
+                        <input type="text" id="Full Names" placeholder="e.g Phakiso Ngcobo" required>
+                        </div>
+                        
 
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" placeholder="phakisongcobo@gmail.com" required>
+                        <br>
 
-                    <label for="subject">Subject:</label>
-                    <select name="subject" required>
-                        <option value="">--Please Select One--</option>
-                        <option value="Employer">Employer</option>
-                        <option value="Tutoring Lessons">Tutoring Lessons</option>
-                        <option value="Project Collaboration">Project Collaboration</option>
-                    </select>
+                        <div>
+                            <label for="email">Email Address:</label>
+                        <input type="email" id="email" placeholder="phakisongcobo@gmail.com" required>
+                        </div>
+                        
+
+                        <br>
+
+                    </div>
+
+                    <div>
+                        <label for="subject">Subject:</label>
+                        <select name="subject" required>
+                            <option value="">--Please Select One--</option>
+                            <option value="Employer">Employer</option>
+                            <option value="Tutoring Lessons">Tutoring Lessons</option>
+                            <option value="Project Collaboration">Project Collaboration</option>
+                        </select>
+                    </div>
+                
 
                     <br>
 
-                    <textarea type="text" placeholder="Type in your message here..." cols="40" rows="10" required></textarea>
+                    <div id="box">
+                        <h3>Enquire</h3>
+                        <textarea type="text" placeholder="Type in your message here..." cols="50" rows="10" required></textarea>
+                        
+                        <br>
 
-                    <br>
+                        <button type="submit" value="submit">Submit</button>
+                        <button type="reset" value="reset">Reset</button>
+                    </div>
 
-                    <button type="submit" value="submit">Submit</button>
-                    <button type="reset" value="reset">Reset</button>
+                  
 
                 </form>
             </div>
