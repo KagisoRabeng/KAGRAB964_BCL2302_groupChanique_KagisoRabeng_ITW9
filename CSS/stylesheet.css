@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-image: url(../images/aibackground.jpg);
+    background-size: cover;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    border: aqua;
+}
+
+h1 {
+    color: #E9E9E9;
+}
+.a:hover {
+    font-size: larger;
+    border: solid;
+    border-color: #218AFF;
+}
+
+.b:hover {
+    font-size: larger;
+}
+
+.c:hover {
+    font-size: larger;
+}
+
+.d:hover {
+    font-size: larger;
+}
+.e:hover {
+    font-size: larger;
+}
+
+img {
+    border-radius: 50%;
+    border: solid;
+    border-color: teal;
+}
+
+ a {
+    text-decoration: none;
+    color: #FFFFFF;
+ }
+
+ a:hover {
+    color: rebeccapurple;
+ }
+
+ .article {
+    background-color: #346E75;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .education {
+    flex: 1;
+    border: solid;
+    padding: 5px;
+    border-color: #e51013;
+ }
+
+ .skills {
+    flex: 1;
+    border: solid;
+    padding: 5px;
+    border-color: #032539;
+ }
+
+ footer {
+    background-color: #032539;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ }
+
+ .socials {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ /* ---------------MOBILE----------------- */
+
